@@ -7,6 +7,7 @@
 #include "usuario.h"
 #include "persona.h"
 #include "medico.h"
+#include "enfermeros.h"
 #include "paciente.h"
 
 
@@ -18,7 +19,7 @@ void agregarUsuario( void ){
     string text;
     Usuario x;
 
-    aux << x.getApellido() << "***" << x.getNombre() << "***" << x.getDni() << "***" << x.getUsuario() << "***" << x.getContra() ;
+    aux << x.getApellido() << "___" << x.getNombre() << "___" << x.getDni() << "___" << x.getUsuario() << "___" << x.getContra() <<"*****";
 
     text = aux.str();
 
@@ -89,7 +90,7 @@ void agregarEnfermeros(void){
 
     Enfermeros tem();
 
-    aux << tem.getApellido() << "___" << tem.getNombre() << "___" << tem.getDni() << "___" << tem.getRegistro()  << "*****" ;
+    aux << tem.getApellido() << "___" << tem.getNombre() << "___" << tem.getDni() << "___" << "*****" ;
 
     text = aux.str();
 
